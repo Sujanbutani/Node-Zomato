@@ -1,0 +1,15 @@
+module.exports.userValidation = require("./user.validation");
+module.exports.restaurantValidation = require("./Restaurants.validation");
+module.exports.countryValidation = require("./country.validation");
+module.exports.cityValidation = require("./city.validation");
+module.exports.foodValidation = require("./food.validation");
+module.exports.bannerValidation = require("./banner.validation");
+module.exports.restaurant_typeValidation = require("./restaurant_type.validation");
+module.exports.cartValidation = require("./cart.validation");
+module.exports.orderValidation = require("./order.validation");
+module.exports.deliveryValidation = require("./delivery.validation");
+module.exports.paymentValidation = require("./payment.validation");
+module.exports.adminValidation = require("./admin.validation");
+module.exports.blogValidation = require("./blog.validation");
+module.exports.reviewValidation = require("./review.validation");
+module.exports.tokenValidation=require("./token.validation");

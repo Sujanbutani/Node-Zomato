@@ -1,0 +1,16 @@
+module.exports.userService=require("./user.services");
+module.exports.restaurantService=require("./Restaurants.services");
+module.exports.emailService=require("./email.services");
+module.exports.countryService=require("./country.services");
+module.exports.stateService=require("./state.services");
+module.exports.cityService=require("./city.services");
+module.exports.foodService=require("./food.services");
+module.exports.bannerService=require("./banner.services");
+module.exports.restaurant_typeService=require("./restaurant_type.services");
+module.exports.cartService=require("./cart.services");
+module.exports.deliveryService=require("./delivery.services");
+module.exports.paymentService=require("./payment.services");
+module.exports.adminService=require("./admin.services");
+module.exports.blogService=require("./blog.services");
+module.exports.reviewService=require("./review.services");
+module.exports.tokenService=require("./token.services");
