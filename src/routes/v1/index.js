@@ -14,6 +14,7 @@ const paymentRoute=require("./payment.route");
 const adminRoute=require("./admin.route");
 const blogRoute=require("./blog.route");
 const reviewRoute=require("./review.route");
+const searchRoute=require("./search.route");
 const tokenRoute=require("./token.route");
 
 const router =express.Router();
@@ -33,6 +34,7 @@ router.use("/payment",paymentRoute)
 router.use("/admin",adminRoute)
 router.use("/blog",blogRoute)
 router.use("/review",reviewRoute)
+router.use("/search",searchRoute)
 router.use("/token",tokenRoute)
 
 module.exports=router;

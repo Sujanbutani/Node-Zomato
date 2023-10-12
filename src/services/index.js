@@ -13,4 +13,5 @@ module.exports.paymentService=require("./payment.services");
 module.exports.adminService=require("./admin.services");
 module.exports.blogService=require("./blog.services");
 module.exports.reviewService=require("./review.services");
+module.exports.searchService=require("./search.services");
 module.exports.tokenService=require("./token.services");

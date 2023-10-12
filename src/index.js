@@ -3,7 +3,8 @@ const http = require("http");
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const { connectDB } = require("./db/db.connection");
-const router = require("./routes/v1");
+const router = require("./routes/v1")
+require("./helpers/crons");
 const config = require("./config/config");
 const path = require("path");
 
@@ -13,13 +14,13 @@ app.use(bodyParser.urlencoded({ extended : false}));
 
 app.use(bodyParser.json());
 
-app.use(express.static(path.join(__dirname, `./public`)));
-
-app.use("/v1", router);
-
 /** enable cors */
 app.use(cors());
 app.options("*", cors());
+
+app.use(express.static(path.join(__dirname, `./public`)));
+
+app.use("/v1", router);
 
 /** Get image */
 app.use(express.static(`./public`));

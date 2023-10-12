@@ -27,10 +27,15 @@ const deletecity = async(CityId) => {
   return city.findByIdAndDelete(CityId);
 };
 
+// get city details by name
+const getCityByName = async(city_name) => {
+  return city.findOne({city_name})
+}
 module.exports = {
   createCity,
   getCityList,
   getCityById,
   updateDetails,
-  deletecity
+  deletecity,
+  getCityByName
 };
